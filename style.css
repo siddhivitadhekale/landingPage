@@ -1,0 +1,1488 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+html {
+  overflow-x: hidden;
+}
+section {
+  min-height: 55vh;
+  padding: 1.5rem 4%;
+}
+hr {
+  border-bottom: 1px dashed var(--second-bg-color);
+}
+/* Variable css */
+:root {
+  --first-bg-color: #ffffe6;
+  --second-bg-color: #3399ff;
+  --first-color: #002b80;
+  --second-color: #ff3333;
+  --third-color: #ffcccc;
+  --nav-panel-color: #00264d;
+  --text-color: #8c8c8c;
+  --font-color: #333333;
+  --heading-color: #0d0d0d;
+  --footer-color: #042942;
+
+  /* Font size */
+  --normal-font-size: 1rem;
+  --heading-font-size: 2.5rem;
+  --subheading-font-size: 1.5rem;
+  --small-font-size: 0.7rem;
+}
+/* -----------nav-panel2--------------------- */
+.preloader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(236, 243, 243);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease-in-out;
+}
+
+.fade-out-animation {
+  opacity: 0;
+}
+.nav-panel2 {
+  background-color: var(--second-bg-color);
+  height: 10vh;
+}
+.nav-link {
+  color: var(--first-bg-color);
+  font-weight: 500;
+  margin-left: 10px;
+}
+.nav-link:hover {
+  color: rgb(20, 53, 161);
+}
+
+/* navbar section */
+.container-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+.navbar-brand {
+  display: flex;
+  flex-direction: row;
+}
+.navbar-brandheading {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--normal-font-size);
+  font-weight: 700;
+  margin-left: 20px;
+}
+.navbar-subheading {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--small-font-size);
+}
+.navbar-servies {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  justify-content: space-evenly;
+}
+.navbar-servies i {
+  margin-top: 15px;
+  margin-right: 20px;
+}
+.navbar-services-subheading {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+.navbar-servies-heading {
+  font-size: var(--small-font-size);
+  color: black;
+  font-weight: 500;
+}
+
+/* -----------hero-section------------------- */
+.hero-section {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--nav-panel-color);
+}
+.hero-info {
+  color: var(--first-bg-color);
+  padding-left: 35px;
+}
+.hero-info .breadcrumb .breadcrumb-item {
+  color: var(--first-bg-color);
+  padding: 5px 10px;
+}
+.hero-img img {
+  width: 80vmin;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-left: 15px solid var(--footer-color);
+}
+.hero-btn {
+  background-color: var(--second-bg-color);
+  width: 12vw;
+  margin-top: 20px;
+  padding: 10px;
+  color: var(--first-bg-color);
+  border: none;
+  font-weight: 500;
+}
+.hero-btn:hover {
+  color: var(--first-color);
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  padding-right: var(--bs-breadcrumb-item-padding-x);
+  color: rgb(163, 15, 15);
+  content: var(--bs-breadcrumb-divider, "/");
+}
+.btn-primary {
+  height: 8vh;
+}
+
+.enquiryicons {
+  display: inline-block;
+}
+/* nav-panel3 */
+.nav-panel3 .nav-link {
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+  color: black;
+  margin-left: 50px;
+}
+.nav-underline {
+  color: black;
+  border-bottom: 1px solid var(--second-bg-color);
+}
+/* Treatment overview */
+.overview {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 5px;
+  align-items: start;
+}
+.overview-img img {
+  width: 35vw;
+}
+.heading {
+  margin-bottom: 25px;
+}
+/*Overview eligibility */
+.eligible {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 5px;
+}
+.Hospital {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 5px;
+  width: 68vw;
+}
+
+.form {
+  position: sticky;
+  height: 50vh;
+  width: 50vw;
+  border: 0.8px solid #8c8c8c52;
+  box-shadow: 0px 2px 10px 3px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  text-align: center;
+}
+.form-heading {
+  font-family: Georgia;
+  font-style: italic;
+  color: var(--second-bg-color);
+}
+.form-control {
+  height: 5vh;
+  width: 20vw;
+  margin: 15px;
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+}
+.form-btn {
+  width: 10vw;
+  height: 30px;
+  font-size: var(--small-font-size);
+  margin-top: 20px;
+  margin-bottom: 15px;
+  background-color: var(--second-bg-color);
+  color: var(--first-bg-color);
+}
+/* tretmet recover */
+
+/* Treatment Faq */
+.accordion-button::after {
+  flex-shrink: 0;
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  margin-left: auto;
+  content: "";
+  background-image: url("/Images/+img.png");
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("/Images/-img.png");
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+.accordion-button {
+  color: black;
+  font-weight: 500;
+}
+
+/* patient stories */
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  top: 50%;
+  flex: 0 1 auto;
+  width: 10px;
+  height: auto;
+  padding: 0;
+  margin-top: 999px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #2959bf;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 5px solid #0943a7;
+  border-bottom: 5px solid #093594;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+  border-radius: 50%;
+}
+.card-patient {
+  width: 20vw;
+  height: 45vh;
+  border: 0.6px solid rgb(185, 180, 180);
+  box-shadow: 3px 6px 8px 2px rgba(0, 0, 0, 0.3);
+  overflow-y: hidden;
+}
+.card-patient img {
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
+  margin: 10px;
+}
+.card-patient-body {
+  padding: 10px;
+}
+.card-patient-title {
+  font-size: var(--normal-font-size);
+  font-weight: 700;
+}
+.card-patient-name {
+  font-size: var(--normal-font-size);
+  font-weight: 700;
+}
+
+/* Doctors */
+#Doctors {
+  background-color: #d5e7e7;
+  text-align: center;
+}
+.Doctors-info {
+  font-family: Georgia;
+  font-style: italic;
+  color: red;
+  font-weight: 500;
+}
+.Doctors-subheading {
+  font-weight: 700;
+}
+.color {
+  color: var(--second-bg-color);
+  font-weight: 500;
+}
+.Doctors-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 60px;
+  width: 80vw;
+  height: 70vh;
+}
+.card-title {
+  font-family: Georgia;
+  font-style: italic;
+  color: var(--second-color);
+  font-weight: 500;
+}
+.card-text {
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+}
+.card-smheading {
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  margin-top: 0;
+}
+
+/* services */
+#services {
+  text-align: center;
+}
+.services-panelCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 60px;
+  width: 80vw;
+  height: 70vh;
+}
+.services-info {
+  font-family: Georgia;
+  font-style: italic;
+  color: red;
+  font-weight: 500;
+}
+.services-card {
+  border: 1px dashed red;
+}
+.msg {
+  font-weight: 600;
+}
+.specialmsg {
+  color: var(--second-color);
+}
+
+/* footer */
+.footer-panel1 {
+  height: 30vh;
+  width: 100vw;
+  text-align: center;
+  background-color: var(--second-bg-color);
+  padding: 30px;
+  color: var(--first-bg-color);
+}
+.footer-btn {
+  width: 10vw;
+  margin: 10px;
+  background-color: #0f59da;
+  font-size: var(--small-font-size);
+  padding: 10px;
+  color: var(--first-bg-color);
+}
+.footer-panel2 {
+  width: 100vw;
+  padding: 20px;
+  background-color: var(--footer-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: var(--first-bg-color);
+}
+.footer-panel3 {
+  width: 100vw;
+}
+.footer-about {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footer-img {
+  display: flex;
+  flex-direction: row;
+}
+.footer-imgtitle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.footer-img img {
+  height: 60px;
+  width: 60px;
+  margin-left: 0;
+}
+.footer-info p {
+  text-align: center;
+  font-size: var(--small-font-size);
+}
+.footer-info h4 {
+  text-align: center;
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+}
+.footer-socialLinks h4 {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+}
+.footer-socialLinks h5,
+h6 {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-socialLinks i {
+  align-items: center;
+  margin-left: 15px;
+}
+.footer-panel4 {
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+  justify-content: space-evenly;
+  background-color: var(--second-bg-color);
+  color: var(--first-bg-color);
+}
+/* media quries*/
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .container-fluid {
+    font-size: 8px;
+  }
+  .navbar-brand img {
+    height: 20px;
+    width: 25px;
+  }
+  .navbar-brandheading {
+    font-size: 8px;
+    margin-left: 2px;
+  }
+  .navbar-subheading {
+    font-size: 5px;
+  }
+  .navbar-servies {
+    display: none;
+  }
+  .navbar-info {
+    display: flex;
+    align-items: end;
+  }
+  .navbar-collapse {
+    top: 18%;
+    left: 2px;
+    width: 162%;
+    margin-right: 72%;
+    flex-basis: 100%;
+    flex-grow: 1;
+    background-color: #79c4f0e8;
+    color: #c1cb99;
+    position: fixed;
+  }
+  .navbar-toggler {
+    margin-left: 2px;
+  }
+  .form-search {
+    display: none;
+  }
+  .btn-primary {
+    display: none;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-info {
+    font-size: var(--small-font-size);
+    padding: 2px;
+    justify-content: center;
+  }
+  .breadcrumb-item {
+    align-content: center;
+
+    justify-content: center;
+    font-size: var(--small-font-size);
+  }
+  .hero-info .breadcrumb .breadcrumb-item {
+    align-content: center;
+    color: var(--first-bg-color);
+    padding: 2px;
+  }
+  .hero-img img {
+    width: 80vmin;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: none;
+    margin-bottom: 2px;
+  }
+  .hero-heading {
+    margin-bottom: 4px;
+  }
+  .hero-btn {
+    width: 30vw;
+    height: 40px;
+    font-size: var(--small-font-size);
+    margin-bottom: 15px;
+
+    /* margin-left: 60px; */
+  }
+  /* panel3 */
+  .nav-panel3 .nav-link {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: var(--small-font-size);
+    margin: auto;
+    padding: 0;
+    gap: 3px;
+  }
+  .nav-underline {
+    border-bottom: none;
+  }
+  .overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--small-font-size);
+  }
+  .overview-img img {
+    width: 75vw;
+  }
+
+  .eligible {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--small-font-size);
+    margin-bottom: 5px;
+  }
+  .form {
+    margin-top: 20px;
+    align-items: center;
+    height: 70vh;
+    width: 70vw;
+    font-size: var(--small-font-size);
+  }
+  .form-control {
+    height: 7vh;
+    width: 60vw;
+  }
+  .form-btn {
+    width: 40vw;
+    height: 8vh;
+    padding: 5px;
+    font-size: var(--small-font-size);
+  }
+  .Hospital {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-size: var(--small-font-size);
+    align-items: center;
+  }
+  .heading {
+    text-align: center;
+    font-size: var(--normal-font-size);
+    font-weight: 700;
+  }
+  .accordion-button {
+    font-size: var(--small-font-size);
+  }
+  .card-patient {
+    width: 88vw;
+    height: 43vh;
+    border: 0.6px solid rgb(185, 180, 180);
+    box-shadow: 3px 6px 8px 2px rgba(0, 0, 0, 0.3);
+    overflow-y: hidden;
+  }
+  .card-patient-title {
+    font-size: var(--small-font-size);
+    font-weight: 400;
+  }
+  .card-patient-name {
+    font-size: var(--small-font-size);
+    font-weight: 400;
+  }
+
+  .Doctors-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 30px;
+    width: 80vw;
+    height: auto;
+  }
+
+  .services-panelCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 32px;
+    width: 80vw;
+    height: auto;
+  }
+  .msg {
+    font-weight: 600;
+    margin-top: 18px;
+    font-size: var(--small-font-size);
+  }
+  .footer-panel1 {
+    height: auto;
+    width: 100vw;
+    text-align: center;
+    background-color: var(--second-bg-color);
+    padding: 20px;
+    color: var(--first-bg-color);
+  }
+  .footer-panel1 h6 {
+    font-size: 12px;
+  }
+  .footer-panel1 h2 {
+    font-size: 14px;
+  }
+  .footer-no {
+    font-size: 12px;
+  }
+
+  .footer-btn {
+    width: 33vw;
+    margin: 10px;
+    background-color: #0f59da;
+    font-size: var(--small-font-size);
+    padding: 10px;
+    color: var(--first-bg-color);
+  }
+  .footer-panel2 {
+    width: 100vw;
+    padding: 9px;
+    background-color: var(--footer-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--first-bg-color);
+  }
+  .footer-hospitalServies h4 {
+    text-align: center;
+    font-size: var(--normal-font-size);
+    font-size: 600;
+  }
+  .footer-hospitalServies li {
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+    margin-right: 33px;
+  }
+  .footer-about {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .footer-img img {
+    height: 30px;
+    width: 40px;
+    margin-left: 0;
+  }
+  .footer-title {
+    font-size: 14px;
+  }
+  .footer-subtitle {
+    font-size: 6px;
+    margin-bottom: 20px;
+  }
+  .footer-info h4 {
+    font-size: 14px;
+  }
+  .footer-info p {
+    font-size: 8px;
+  }
+  .footer-socialLinks h4 {
+    font-size: 14px;
+  }
+  .footer-socialLinks i {
+    font-size: 12px;
+  }
+  .footer-socialLinks h5 {
+    font-size: 12px;
+  }
+  .footer-socialLinks h6 {
+    font-size: 8px;
+  }
+  .footer-panel4 {
+    height: 5vh;
+  }
+  .footer-panel4 h6 {
+    font-size: 6px;
+    padding-top: 7px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 490px) and (max-width: 668px) {
+  * {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .container-fluid {
+    font-size: 8px;
+  }
+  .navbar-brand img {
+    height: 20px;
+    width: 25px;
+  }
+  .navbar-brandheading {
+    font-size: 8px;
+    margin-left: 2px;
+  }
+  .navbar-subheading {
+    font-size: 5px;
+  }
+  .navbar-servies {
+    display: none;
+  }
+  .navbar-info {
+    display: flex;
+    align-items: end;
+  }
+  .navbar-collapse {
+    top: 18%;
+    left: 2px;
+    width: 162%;
+    margin-right: 72%;
+    flex-basis: 100%;
+    flex-grow: 1;
+    background-color: #79c4f0e8;
+    color: #c1cb99;
+    position: fixed;
+  }
+  .navbar-toggler {
+    margin-left: 2px;
+  }
+  .form-search {
+    display: none;
+  }
+  .btn-primary {
+    display: none;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-info {
+    font-size: var(--small-font-size);
+    padding: 2px;
+    justify-content: center;
+  }
+  .breadcrumb-item {
+    align-content: center;
+    justify-content: center;
+    font-size: var(--normal-font-size);
+  }
+  .hero-info .breadcrumb .breadcrumb-item {
+    align-content: center;
+    color: var(--first-bg-color);
+    padding: 2px;
+  }
+  .hero-img img {
+    width: 70vmin;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: none;
+    margin-bottom: 2px;
+  }
+  .hero-heading {
+    margin-bottom: 4px;
+  }
+  .hero-subheading {
+    text-align: center;
+    font-size: var(--small-font-size);
+  }
+  .hero-btn {
+    width: 30vw;
+    height: 40px;
+    font-size: var(--small-font-size);
+    margin-bottom: 15px;
+
+    /* margin-left: 60px; */
+  }
+  /* panel3 */
+  .nav-panel3 .nav-link {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: var(--small-font-size);
+    margin-left: 10px;
+    padding: 0;
+    gap: 8px;
+  }
+  .nav-underline {
+    border-bottom: none;
+  }
+  .overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--small-font-size);
+  }
+  .overview-img img {
+    width: 55vw;
+  }
+
+  .eligible {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--small-font-size);
+    margin-bottom: 5px;
+  }
+  .form {
+    margin-top: 20px;
+    align-items: center;
+    height: 60vh;
+    width: 50vw;
+    font-size: var(--small-font-size);
+  }
+  .form-control {
+    height: 7vh;
+    width: 60vw;
+  }
+  .form-btn {
+    width: 40vw;
+    height: 8vh;
+    padding: 5px;
+    font-size: var(--small-font-size);
+  }
+  .Hospital {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-size: var(--small-font-size);
+    align-items: center;
+  }
+  .heading {
+    text-align: center;
+    font-size: var(--normal-font-size);
+    font-weight: 700;
+  }
+  .accordion-button {
+    font-size: var(--small-font-size);
+  }
+  .card-patient {
+    width: 70vw;
+    height: 43vh;
+    border: 0.6px solid rgb(185, 180, 180);
+    box-shadow: 3px 6px 8px 2px rgba(0, 0, 0, 0.3);
+    overflow-y: hidden;
+    margin-left: 56px;
+  }
+  .card-patient-title {
+    font-size: var(--small-font-size);
+    font-weight: 700;
+  }
+  .card-patient-name {
+    font-size: var(--small-font-size);
+    font-weight: 400;
+  }
+
+  .Doctors-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 90px;
+    width: 60vw;
+    height: auto;
+  }
+
+  .services-panelCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 92px;
+    width: 60vw;
+    height: auto;
+  }
+  .msg {
+    font-weight: 600;
+    margin-top: 18px;
+    font-size: var(--small-font-size);
+  }
+  .footer-panel1 {
+    height: auto;
+    width: 100vw;
+    text-align: center;
+    background-color: var(--second-bg-color);
+    padding: 20px;
+    color: var(--first-bg-color);
+  }
+  .footer-panel1 h6 {
+    font-size: 12px;
+  }
+  .footer-panel1 h2 {
+    font-size: 14px;
+  }
+  .footer-no {
+    font-size: 12px;
+  }
+
+  .footer-btn {
+    width: 33vw;
+    margin: 10px;
+    background-color: #0f59da;
+    font-size: var(--small-font-size);
+    padding: 10px;
+    color: var(--first-bg-color);
+  }
+  .footer-panel2 {
+    width: 100vw;
+    padding: 9px;
+    background-color: var(--footer-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--first-bg-color);
+  }
+  .footer-hospitalServies h4 {
+    text-align: center;
+    font-size: var(--normal-font-size);
+    font-size: 600;
+  }
+  .footer-hospitalServies li {
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+    margin-right: 33px;
+  }
+  .footer-about {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .footer-panel3 {
+    height: 40vh;
+  }
+  .footer-img img {
+    height: 30px;
+    width: 40px;
+    margin-left: 0;
+  }
+  .footer-title {
+    font-size: 14px;
+  }
+  .footer-subtitle {
+    font-size: 6px;
+    margin-bottom: 20px;
+  }
+  .footer-info h4 {
+    text-align: center;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  .footer-info p {
+    font-size: var(--small-font-size);
+  }
+  .footer-socialLinks {
+    width: 100%;
+  }
+  .footer-socialLinks h4 {
+    font-size: var(--normal-font-size);
+  }
+  .footer-socialLinks i {
+    align-items: center;
+    font-size: 20px;
+    margin-left: 110px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+  }
+  .footer-socialLinks h5 {
+    font-size: 12px;
+  }
+  .footer-socialLinks h6 {
+    font-size: 8px;
+  }
+  .footer-panel4 {
+    height: 5vh;
+  }
+  .footer-panel4 h6 {
+    font-size: 12px;
+    padding-top: 7px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 669px) and (max-width: 998px) {
+  * {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .container-fluid {
+    font-size: 8px;
+  }
+  .navbar-brand img {
+    height: 20px;
+    width: 25px;
+  }
+  .navbar-brandheading {
+    font-size: 8px;
+    margin-left: 2px;
+  }
+  .navbar-subheading {
+    font-size: 5px;
+  }
+  .navbar-servies {
+    display: none;
+  }
+  .navbar-info {
+    display: flex;
+    align-items: end;
+  }
+  .navbar-collapse {
+    top: 18%;
+    left: 2px;
+    width: 162%;
+    margin-right: 72%;
+    flex-basis: 100%;
+    flex-grow: 1;
+    background-color: #79c4f0e8;
+    color: #c1cb99;
+    position: fixed;
+  }
+  .navbar-toggler {
+    margin-left: 2px;
+  }
+  .form-search {
+    display: none;
+  }
+  .btn-primary {
+    display: none;
+  }
+
+  .hero-section {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-info {
+    font-size: var(--small-font-size);
+    padding: 2px;
+    justify-content: center;
+  }
+  .breadcrumb-item {
+    align-content: center;
+    justify-content: center;
+    font-size: var(--normal-font-size);
+  }
+  .hero-info .breadcrumb .breadcrumb-item {
+    align-content: center;
+    color: var(--first-bg-color);
+    padding: 2px;
+  }
+  .hero-img img {
+    width: 70vmin;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-left: 15px solid var(--footer-color);
+    margin-bottom: 2px;
+  }
+  .hero-heading {
+    font-size: var(--small-font-size);
+    margin-bottom: 4px;
+  }
+  .hero-subheading {
+    text-align: center;
+    font-size: 12px;
+  }
+  .hero-btn {
+    width: 20vw;
+    height: 30px;
+    font-size: var(--small-font-size);
+    margin-bottom: 15px;
+
+    /* margin-left: 60px; */
+  }
+  /* panel3 */
+  .nav-panel3 .nav-link {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 0;
+    gap: 12px;
+  }
+  .nav-underline {
+    border-bottom: none;
+  }
+  .overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--normal-font-size);
+  }
+  .overview-img img {
+    width: 55vw;
+  }
+
+  .eligible {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--normal-font-size);
+    margin-bottom: 5px;
+  }
+  .form {
+    margin-top: 20px;
+    align-items: center;
+    height: 60vh;
+    width: 50vw;
+    font-size: var(--small-font-size);
+  }
+  .form-control {
+    height: 7vh;
+    width: 60vw;
+  }
+  .form-btn {
+    width: 40vw;
+    height: 8vh;
+    padding: 5px;
+    font-size: var(--small-font-size);
+  }
+  .Hospital {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-size: var(--normal-font-size);
+    align-items: center;
+  }
+  .heading {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    overflow-y: hidden;
+  }
+  .accordion-button {
+    font-size: var(--small-font-size);
+  }
+  .card-patient {
+    width: 23vw;
+    height: 53vh;
+    border: 0.6px solid rgb(185, 180, 180);
+    box-shadow: 3px 6px 8px 2px rgba(0, 0, 0, 0.3);
+    overflow-y: hidden;
+    margin-left: 56px;
+  }
+  .card-patient-title {
+    font-size: var(--small-font-size);
+    font-weight: 700;
+  }
+  .card-patient-name {
+    font-size: var(--small-font-size);
+    font-weight: 400;
+  }
+
+  .Doctors-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 90px;
+    width: 80vw;
+    height: 63vh;
+  }
+  .Doctors-subheading {
+    overflow-y: hidden;
+  }
+
+  .services-panelCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 92px;
+    width: 80vw;
+    height: 60vh;
+  }
+  .services {
+    overflow-y: hidden;
+  }
+  .services-info {
+    font-size: 22px;
+    text-align: center;
+  }
+  .services-subheading {
+    font-size: 22px;
+    overflow-y: hidden;
+  }
+
+  .msg {
+    font-weight: 600;
+    margin-top: 18px;
+    font-size: var(--normal-font-size);
+  }
+  .footer-panel1 {
+    height: auto;
+    width: 100vw;
+    text-align: center;
+    background-color: var(--second-bg-color);
+    padding: 20px;
+    color: var(--first-bg-color);
+  }
+  .footer-panel1 h6 {
+    font-size: var(--small-font-size);
+  }
+  .footer-panel1 h2 {
+    font-size: var(--normal-font-size);
+  }
+  .footer-no {
+    font-size: 18px;
+  }
+
+  .footer-btn {
+    width: 20vw;
+    margin: 10px;
+    background-color: #0f59da;
+    font-size: var(--small-font-size);
+    padding: 10px;
+    color: var(--first-bg-color);
+  }
+  .footer-panel2 {
+    width: 100vw;
+    padding: 9px;
+    background-color: var(--footer-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--first-bg-color);
+    font-size: var(--small-font-size);
+    overflow-y: hidden;
+  }
+  .footer-hospitalServies h4 {
+    text-align: center;
+    font-size: var(--normal-font-size);
+    font-size: 600;
+    overflow-y: hidden;
+  }
+  .footer-hospitalServies li {
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+    margin-right: 33px;
+  }
+  .footer-about {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .footer-panel3 {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-info {
+    width: 52vw;
+    overflow-y: hidden;
+  }
+  .footer-img img {
+    height: 30px;
+    width: 40px;
+    margin-left: 0;
+  }
+  .footer-title {
+    font-size: 10px;
+    overflow-y: hidden;
+  }
+  .footer-subtitle {
+    font-size: 5px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+  }
+  .footer-info h4 {
+    text-align: center;
+    align-items: center;
+    margin-left: 29px;
+    margin-right: 30px;
+    font-size: 12px;
+    overflow-y: hidden;
+  }
+  .footer-info p {
+    font-size: var(--small-font-size);
+    margin-right: 10px;
+    overflow-x: hidden;
+  }
+  .footer-socialLinks {
+    margin-right: 10px;
+  }
+  .footer-socialLinks h4 {
+    font-size: 12px;
+  }
+  .footer-socialLinks i {
+    align-items: center;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-left: 10px;
+  }
+  .footer-socialLinks h5 {
+    font-size: 8px;
+  }
+  .footer-socialLinks h6 {
+    font-size: 8px;
+  }
+  .footer-panel4 {
+    height: 10vh;
+  }
+  .footer-panel4 h6 {
+    font-size: 12px;
+    padding-top: 22px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 999px) and (max-width: 1200px) {
+  .card-patient {
+    width: 23vw;
+    height: 53vh;
+    border: 0.6px solid rgb(185, 180, 180);
+    box-shadow: 3px 6px 8px 2px rgba(0, 0, 0, 0.3);
+    overflow-y: hidden;
+    margin-left: 56px;
+  }
+  .card-patient-title {
+    font-size: var(--small-font-size);
+    font-weight: 700;
+  }
+  .card-patient-name {
+    font-size: var(--small-font-size);
+    font-weight: 400;
+  }
+
+  .Doctors-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 90px;
+    width: 60vw;
+    height: 40vh;
+  }
+  .Doctors-subheading {
+    overflow-y: hidden;
+  }
+
+  .footer-panel2 {
+    width: 100vw;
+    padding: 9px;
+    background-color: var(--footer-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--first-bg-color);
+    font-size: var(--small-font-size);
+  }
+  .footer-hospitalServies h4 {
+    text-align: center;
+    font-size: var(--small-font-size);
+    font-size: 600;
+  }
+  .footer-about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .footer-socialLinks h4 {
+    font-size: var(--normal-font-size);
+  }
+  .footer-socialLinks i {
+    align-items: center;
+    font-size: 7px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-left: 10px;
+  }
+  .footer-socialLinks h5 {
+    font-size: 8px;
+  }
+  .footer-socialLinks h6 {
+    font-size: 8px;
+  }
+}
